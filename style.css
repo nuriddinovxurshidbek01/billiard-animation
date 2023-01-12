@@ -15,6 +15,7 @@
 .stick {
     position: absolute;
     top: 220px;
+    /* display: flex; */
     left: -250px;
     width: 400px;
     height: 8px;
@@ -48,6 +49,16 @@
     width: 100px;
     height: 8px;
     background-color: rgb(136, 103, 19);
+    border-radius: 1px;
+}
+
+.stick::after {
+    content: "";
+    display: flex;
+    margin-left: 350px;
+    width: 10px;
+    height: 6px;
+    background-color: rgb(245, 241, 230);
     border-radius: 2px;
 }
 
