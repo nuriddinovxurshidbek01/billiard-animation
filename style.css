@@ -1,0 +1,484 @@
+.pool-table {
+    position: relative;
+    margin: 90px auto;
+    width: 800px;
+    height: 450px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    outline: 10px solid sienna;
+}
+
+.stick_wrapper {
+    position: relative;
+}
+
+.stick {
+    position: absolute;
+    top: 220px;
+    left: -250px;
+    width: 400px;
+    height: 8px;
+    background-color: goldenrod;
+    border-radius: 3px;
+    animation-name: stick;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes stick {
+    0% {
+        top: 220px;
+        left: -250px;
+    }
+    35% {
+        top: 220px;
+        margin-left: -350px;
+    }
+    100% {
+        top: 220px;
+        left: -251px;
+    }
+}
+
+.stick::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: rgb(136, 103, 19);
+    border-radius: 2px;
+}
+
+.gata {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.gata2 {
+    top: 0;
+    right: 0;
+}
+
+.gata3 {
+    top: 0;
+    right: 390px;
+}
+
+.gata4 {
+    bottom: 0;
+    right: 390px;
+}
+
+.gata5 {
+    bottom: 0;
+    right: 0;
+}
+
+.gata6 {
+    bottom: 0;
+    left: 0;
+}
+
+p {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball_wrapper {
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball-0 {
+    top: 200px;
+    left: 150px;
+    background-color: white;
+    animation-name: gameBliard;
+    animation-duration: 1.2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes gameBliard {
+    0% {
+        top: 200px;
+        left: 150px;
+    }
+    40% {
+        top: 200px;
+        left: 415px;
+    }
+    100% {
+        top: 350px;
+        left: 250px;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.966);
+    }
+}
+
+.ball-1 {
+    top: 200px;
+    left: 450px;
+    background-color: rgba(215, 236, 18, 0.918);
+    animation-name: game1;
+    animation-duration: 1.4s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game1 {
+    from {
+        top: 200px;
+        left: 450px;
+    }
+    to {
+        top: 200px;
+        left: 200px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-2 {
+    top: 183px;
+    left: 480px;
+    background-color: rgba(0, 198, 233, 0.945);
+    animation-name: game2;
+    animation-duration: 1.7s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game2 {
+    0% {
+        top: 183px;
+        left: 480px;
+    }
+    30% {
+        top: 1px;
+        left: 500px;
+    }
+    50% {
+        top: 30px;
+        left: 434px;
+        transform: rotate(450deg);
+    }
+    100% {
+        top: 2px;
+        left: 372.5px;
+        color: white;
+        background-color: white;
+    }
+}
+
+.ball-3 {
+    top: 219px;
+    left: 480px;
+    background-color: rgb(245, 0, 0);
+    animation-name: game3;
+    animation-duration: 0.9s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game3 {
+    from {
+        top: 219px;
+        left: 480px;
+    }
+    to {
+        top: 350px;
+        left: 500px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-4 {
+    top: 166px;
+    left: 510px;
+    background-color: rgb(144, 146, 110);
+    animation-name: game4;
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game4 {
+    0% {
+        top: 166px;
+        left: 510px;
+    }
+    40% {
+        top: 55px;
+        left: 454px;
+    }
+    100% {
+        top: 120px;
+        left: 550px;
+        transform: rotate(200deg);
+    }
+}
+
+.ball-5 {
+    top: 200px;
+    left: 510px;
+    background-color: rgba(108, 136, 108, 0.87);
+    animation-name: game5;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game5 {
+    from {
+        top: 200px;
+        left: 510px;
+    }
+    to {
+        top: 100px;
+        left: 448px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-6 {
+    top: 238px;
+    left: 511px;
+    background-color: rgb(221, 48, 48);
+    animation-name: game6;
+    animation-duration: 0.8s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game6 {
+    from {
+        top: 238px;
+        left: 511px;
+    }
+    to {
+        top: 300px;
+        left: 450px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-7 {
+    top: 149px;
+    left: 540px;
+    background-color: rgb(206, 238, 27);
+    animation-name: game7;
+    animation-duration: 1s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game7 {
+    from {
+        top: 149px;
+        left: 540px;
+    }
+    to {
+        top: 40px;
+        left: 670px;
+        transform: rotate(720deg);
+    }
+}
+
+.ball-8 {
+    top: 184px;
+    left: 543px;
+    background-color: rgb(46, 24, 173);
+    animation-name: game8;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game8 {
+    from {
+        top: 184px;
+        left: 543px;
+    }
+    to {
+        top: 170px;
+        left: 450px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-9 {
+    top: 219px;
+    left: 543px;
+    background-color: rgb(235, 17, 235);
+    animation-name: game9;
+    animation-duration: 0.9s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game9 {
+    from {
+        top: 219px;
+        left: 543px;
+    }
+    to {
+        top: 249px;
+        left: 380px;
+        transform: rotate(200deg);
+    }
+}
+
+.ball-10 {
+    top: 254px;
+    left: 543px;
+    background-color: rgb(53, 139, 60);
+    animation-name: game10;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game10 {
+    from {
+        top: 254px;
+        left: 543px;
+    }
+    to {
+        top: 307px;
+        left: 650px;
+        transform: rotate(360deg);
+    }
+}
+
+.ball-11 {
+    top: 133px;
+    left: 572px;
+    background-color: rgb(5, 238, 255);
+    animation-name: game11;
+    animation-duration: 0.5s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game11 {
+    from {
+        top: 133px;
+        left: 572px;
+    }
+    to {
+        top: 2px;
+        left: 762px;
+        display: none;
+        transform: rotate(300deg);
+        color: white;
+        background-color: white;
+    }
+}
+
+.ball-12 {
+    top: 167px;
+    left: 572px;
+    background-color: rgb(59, 57, 57);
+    animation-name: game12;
+    animation-duration: 0.9s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game12 {
+    from {
+        top: 167px;
+        left: 572px;
+    }
+    to {
+        top: 100px;
+        left: 640px;
+        transform: rotate(250deg);
+    }
+}
+
+.ball-13 {
+    top: 202px;
+    left: 572px;
+    background-color: rgb(229, 255, 0);
+    animation-name: game13;
+    animation-duration: 0.8s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game13 {
+    from {
+        top: 202px;
+        left: 572px;
+    }
+    to {
+        top: 190px;
+        left: 680px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-14 {
+    top: 237px;
+    left: 572px;
+    background-color: rgb(68, 61, 107);
+    animation-name: game14;
+    animation-duration: 0.8s;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game14 {
+    from {
+        top: 237px;
+        left: 572px;
+    }
+    to {
+        top: 310px;
+        left: 700px;
+        transform: rotate(150deg);
+    }
+}
+
+.ball-15 {
+    top: 272px;
+    left: 572px;
+    background-color: rgb(42, 253, 0);
+    animation-name: game15;
+    animation-duration: 0.7s;
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes game15 {
+    from {
+        top: 273px;
+        left: 572px;
+    }
+    to {
+        top: 200px;
+        left: 762px;
+        transform: rotate(150deg);
+    }
+}
