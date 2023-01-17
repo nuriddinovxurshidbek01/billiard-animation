@@ -15,12 +15,10 @@
 .stick {
     position: absolute;
     top: 220px;
-    /* display: flex; */
     left: -250px;
     width: 400px;
     height: 8px;
     background-color: goldenrod;
-    /* border-radius: 3px; */
     animation-name: stick;
     animation-duration: 1s;
     animation-delay: 0.1s;
@@ -40,7 +38,6 @@
     100% {
         top: 220px;
         left: -251px;
-        opacity: 0;
     }
 }
 
